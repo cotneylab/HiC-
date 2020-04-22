@@ -1,11 +1,15 @@
 ---
 title: "IDR2R for HiC and 4C data on UCHC HPC"
+<<<<<<< HEAD
 knit: (function(IDR2D_test, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(IDR2D_test,
  encoding=encoding,
  output_file=file.path("/Users/awilderman/Documents/GitHub/Scratchpads/HiC-/", out_dir, 'index.html'))})
 output: html_document
+=======
+output: github_document
+>>>>>>> 9b871b306798ce997d7b6e75922f34a079ee4a47
 ---
 
 ## Please note
@@ -84,13 +88,11 @@ done
 module load R/3.6.0 
 cd ~/ANALYSIS/HiC/WT_INV_CNCC/IDR2D 
 Rscript --no-save --no-restore --verbose IDR2Dbychrom.R > IDR2Dbychrom.Rout 2>&1
-````
 
 ```{r histogram, fig.cap='Histogram - Chr22', echo=FALSE}
 knitr::include_graphics("/Users/awilderman/Dropbox/Cotney_Lab/Capture_Hi-C/HiC/2020-02-01_NoLimits_CNCC_H9/03_2020_two_runs_HiC/IDR2D_pdfs/idr_WT_distribution_histogram_1Mb_chr22.pdf")
 ```
+
 ```{r scatterplot, fig.cap='Scatterplot - Chr22', echo=FALSE}
 knitr::include_graphics("/Users/awilderman/Dropbox/Cotney_Lab/Capture_Hi-C/HiC/2020-02-01_NoLimits_CNCC_H9/03_2020_two_runs_HiC/IDR2D_pdfs/idr_WT_rank_scatterplot_1Mb_chr22.pdf")
-
-
-
+```
