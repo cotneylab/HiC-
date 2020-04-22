@@ -1,15 +1,11 @@
 ---
 title: "IDR2R for HiC and 4C data on UCHC HPC"
-<<<<<<< HEAD
 knit: (function(IDR2D_test, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(IDR2D_test,
  encoding=encoding,
  output_file=file.path("/Users/awilderman/Documents/GitHub/Scratchpads/HiC-/", out_dir, 'index.html'))})
 output: html_document
-=======
-output: github_document
->>>>>>> 9b871b306798ce997d7b6e75922f34a079ee4a47
 ---
 
 ## Please note
