@@ -88,9 +88,9 @@ cd ~/ANALYSIS/HiC/WT_INV_CNCC/IDR2D
 Rscript --no-save --no-restore --verbose IDR2Dbychrom.R > IDR2Dbychrom.Rout 2>&1
 
 ```{r histogram, fig.cap='Histogram - Chr22', echo=FALSE}
-knitr::include_graphics("/Users/awilderman/Documents/GitHub/Scratchpads/HiC-/images/idr_WT_distribution_histogram_1Mb_chr22.pdf")
+knitr::include_graphics("idr_WT_distribution_histogram_1Mb_chr22.pdf")
 ```
 
 ```{r scatterplot, fig.cap='Scatterplot - Chr22', echo=FALSE}
-knitr::include_graphics("/Users/awilderman/Documents/GitHub/Scratchpads/HiC-/images/idr_WT_rank_scatterplot_1Mb_chr22.pdf")
+knitr::include_graphics("idr_WT_rank_scatterplot_1Mb_chr22.pdf")
 ```

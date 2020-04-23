@@ -88,6 +88,6 @@ module load R/3.6.0
 cd ~/ANALYSIS/HiC/WT_INV_CNCC/IDR2D 
 Rscript --no-save --no-restore --verbose IDR2Dbychrom.R > IDR2Dbychrom.Rout 2>&1
 
-![Histogram - Chr22](/Users/awilderman/Documents/GitHub/Scratchpads/HiC-/images/idr_WT_distribution_histogram_1Mb_chr22.pdf)
+![Histogram - Chr22](idr_WT_distribution_histogram_1Mb_chr22.pdf)
 
-![Scatterplot - Chr22](/Users/awilderman/Documents/GitHub/Scratchpads/HiC-/images/idr_WT_rank_scatterplot_1Mb_chr22.pdf)
+![Scatterplot - Chr22](idr_WT_rank_scatterplot_1Mb_chr22.pdf)
