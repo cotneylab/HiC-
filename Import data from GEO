@@ -1,0 +1,25 @@
+#Enter the SRR number of the files for download
+
+````
+#!/bin/bash
+#SBATCH --job-name=SRA_get_fastqs
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -c 4
+#SBATCH --partition=general
+#SBATCH --qos=general
+#SBATCH --mail-type=BEGIN,END
+#SBATCH --mail-user=awilderman@uchc.edu
+#SBATCH -o SRA_get_fastqs_%j.out
+#SBATCH -e SRA_get_fastqs_%j.err
+
+source ~/.bashrc
+module load sratoolkit/2.8.2
+cd /isg/shared/apps/sratoolkit/2.8.2/bin/
+
+prefetch -v SRR<>
+prefetch -v SRR<>	
+
+fastq-dump --outdir ~/DATA/HiC/Human/H9/Lyu --gzip --split-files ~/ncbi/public/sra/SRR<>.sra
+fastq-dump --outdir ~/DATA/HiC/Human/H9/Lyu --gzip --split-files ~/ncbi/public/sra/SRR<>.sra
+````
